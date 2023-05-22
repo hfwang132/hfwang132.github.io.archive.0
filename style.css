@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  font-size: 28px;
   margin: 0;
   padding: 0;
 }
@@ -31,4 +32,12 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #333;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 28px;
 }
