@@ -11,8 +11,14 @@ header, nav, section, footer {
 
 header {
   background-color: #333;
+  text-align: center;
   color: #fff;
+  margin-bottom: 20px; /* Add this line to create vertical space */
 }
+
+/* ------------------------------------ */
+/* ---------- I am a divider ---------- */
+/* ------------------------------------ */
 
 nav ul {
   list-style-type: none;
@@ -21,23 +27,53 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
+  margin-right: 20px; /* Add right margin to create spacing */
+  position: relative; /* Enable positioning for the pseudo-element */
+}
+
+nav ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10px; /* Adjust the position of the line */
+  transform: translateY(-50%);
+  height: 100%; /* Adjust the height of the line */
+  width: 1px; /* Adjust the width of the line */
+  background-color: #686868; /* Customize the color of the line */
+}
+
+nav ul li::before {
+  margin-right: 10px; /* Add right margin to create spacing between bullet and link */
 }
 
 nav ul li a {
   color: #333;
   text-decoration: none;
   padding: 10px;
+  font-size: 32px;
+  margin-right: 20px; /* Increase the right margin to create more spacing */
 }
 
 nav ul li a:hover {
-  background-color: #333;
+  background-color: #939393;
 }
 
+/* ------------------------------------ */
+/* ---------- I am a divider ---------- */
+/* ------------------------------------ */
+
 h1 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 p {
   font-size: 28px;
+}
+
+
+.container {
+  max-width: 70%; /* Set the maximum width for the centered area */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 20px; /* Add padding to create the white spaces */
 }
