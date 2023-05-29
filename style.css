@@ -1,93 +1,16 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 28px;
-  margin: 0;
-  padding: 0;
-}
+@import url("base.css");
 
-header, nav, section, footer {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 20px;
-}
-
-header {
-  background-color: #333;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 20px; /* Add this line to create vertical space */
-}
-
-nav ul {
-  list-style-type: none;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-left: 20px; /* Add right margin to create spacing */
-  margin-right: 20px; /* Add right margin to create spacing */
-  position: relative; /* Enable positioning for the pseudo-element */
-}
-
-nav ul li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -10px; /* Adjust the position of the line */
-  transform: translateY(-50%);
-  height: 100%; /* Adjust the height of the line */
-  width: 1px; /* Adjust the width of the line */
-  background-color: #686868; /* Customize the color of the line */
-}
-
-nav ul li::before {
-  margin-right: 10px; /* Add right margin to create spacing between bullet and link */
-}
-
-nav ul li a {
-  color: #333;
-  /* text-decoration: none; */
-  padding: 10px;
-  font-size: 32px;
-  margin-right: 20px; /* Increase the right margin to create more spacing */
-}
-
-nav ul li a:hover {
-  background-color: #939393;
-}
-
-/* user */
-
-.container {
-  max-width: 60%; /* Set the maximum width for the centered area */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 0 20px; /* Add padding to create the white spaces */
-}
-
-h1 {
-  font-size: 50px;
-}
-
-p {
-  font-size: 28px;
-}
-
-ul li {
-  margin-bottom: 20px; /* Adjust the value as per your preference */
-}
+/* img settings */
 
 #projects img {
-  width: 70%; /* Adjust the width as per your preference */
-  height: auto; /* Let the height scale proportionally */
+  width: 70%;
+  height: auto;
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 10px;
 }
+
+/* hyperlinks */
 
 a {
   color: #fff;
@@ -112,67 +35,4 @@ a:hover {
   text-decoration: none;
   background-color: #666;
   margin-bottom: 10px;
-}
-
-footer {
-  margin-bottom: 20px;
-}
-
-footer p {
-  font-size: 20px;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-/* background */
-
-body {
-  background-color: #222;
-  color: #fff;
-}
-
-.container {
-  background-color: #333;
-}
-
-header {
-  background-color: #111;
-}
-
-nav ul li a {
-  color: #fff;
-}
-
-section {
-  background-color: #444;
-}
-
-section h2 {
-  color: #fff;
-}
-
-section p {
-  color: #ddd;
-}
-
-footer p {
-  color: #ddd;
-}
-
-/* rounded corners */
-
-.container {
-  border-radius: 10px;
-}
-
-nav ul li a {
-  color: inherit;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-section {
-  border-radius: 10px;
 }

@@ -1,0 +1,151 @@
+/* base */
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+nav,
+section,
+footer {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* font size and margin */
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 28px;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+/* nav settings */
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 1px;
+    background-color: #686868;
+}
+
+nav ul li::before {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #333;
+    padding: 10px;
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #939393;
+}
+
+/* background colors */
+
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    background-color: #333;
+}
+
+header {
+    background-color: #111;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+section {
+    background-color: #444;
+}
+
+section h2 {
+    color: #fff;
+}
+
+section p {
+    color: #ddd;
+}
+
+footer p {
+    color: #ddd;
+}
+
+/* rounded corners */
+
+.container {
+    border-radius: 10px;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    border-radius: 10px;
+}
+
+/* footer */
+
+footer {
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
