@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Haifei Wang's Personal Website</title>
+  <title>Haifei's Home</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="UTF-8">
 </head>
@@ -10,7 +10,7 @@
 <body>
 
   <header>
-    <h1>Haifei's Personal Website</h1>
+    <h1>Haifei's Home</h1>
   </header>
 
   <div class="container">
@@ -18,6 +18,7 @@
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#blogs">Blogs</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -25,17 +26,49 @@
 
     <section id="about">
       <h2>About Me</h2>
+      <p>欢迎来到我的个人网站！我是王海飞，一个物理本科生和一个嵌入式软硬件爱好者。</p>
       <p>Welcome to my personal website! I am Haifei Wang, a physics student and an embedded software/hardware
         passionate.</p>
     </section>
 
+    <section id="blogs">
+      <h2>Blogs</h2>
+      <ul>
+        <li><a href="https://www.zhihu.com/column/c_1344764821699592192">Zhihu Column - Insights</a></li>
+        <li><a href="https://www.zhihu.com/column/c_1469679256808235008">Zhihu Column - Tinkers</a></li>
+      </ul>
+    </section>
+
     <section id="projects">
       <h2>My Projects</h2>
-      <ul>
-        <li><a href="#">Project 1</a></li>
-        <li><a href="#">Project 2</a></li>
-        <li><a href="#">Project 3</a></li>
-      </ul>
+      <ol>
+        <li>
+          <a href="https://github.com/hfwang132/zedboard-adi-pynq">
+            <span> PYNQ ubuntu OS with AD9361 kernel support </span>
+            <p>
+            <img src="img/zedboard+ad9361.jpg" alt="project 1">
+            </p>
+            <p>
+            <img src="img/fm-ad9361-system-bd.png" alt="project 1">
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/hfwang132/lenet-hls-pynq">
+            <span>HLS FPGA design for LeNet-5</span>
+            <img src="img/lenet_arch.png" alt="project 2">
+            <img src="img/quant_rpt.png" alt="project 2">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/hfwang132/ssd1680-micropython-drivers">
+            <span>A simple micropython driver for SSD1680 e-ink display</span>
+          </a>
+          <a href="https://github.com/hfwang132/eink-wifi-weather-clock">
+            <img src="img/pico.png" alt="project 3">
+          </a>
+        </li>
+      </ol>
     </section>
 
     <section id="contact">
@@ -46,7 +79,11 @@
     </section>
 
     <footer>
-      <p>&copy; 2023 Haifei's Personal Website. All rights reserved.</p>
+      <p>
+        &copy; 
+        <a href="https://github.com/hfwang132/hfwang132.github.io"> 2023 Haifei's Home. </a>
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
+      </p>
     </footer>
   </div>
 

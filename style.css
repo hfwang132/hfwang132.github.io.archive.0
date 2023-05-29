@@ -9,6 +9,10 @@ header, nav, section, footer {
   padding: 20px;
 }
 
+section {
+  margin-bottom: 20px;
+}
+
 header {
   background-color: #333;
   text-align: center;
@@ -16,18 +20,16 @@ header {
   margin-bottom: 20px; /* Add this line to create vertical space */
 }
 
-/* ------------------------------------ */
-/* ---------- I am a divider ---------- */
-/* ------------------------------------ */
-
 nav ul {
   list-style-type: none;
+  text-align: center;
   padding: 0;
   margin: 0;
 }
 
 nav ul li {
   display: inline-block;
+  margin-left: 20px; /* Add right margin to create spacing */
   margin-right: 20px; /* Add right margin to create spacing */
   position: relative; /* Enable positioning for the pseudo-element */
 }
@@ -49,7 +51,7 @@ nav ul li::before {
 
 nav ul li a {
   color: #333;
-  text-decoration: none;
+  /* text-decoration: none; */
   padding: 10px;
   font-size: 32px;
   margin-right: 20px; /* Increase the right margin to create more spacing */
@@ -59,9 +61,13 @@ nav ul li a:hover {
   background-color: #939393;
 }
 
-/* ------------------------------------ */
-/* ---------- I am a divider ---------- */
-/* ------------------------------------ */
+/* user */
+
+.container {
+  max-width: 60%; /* Set the maximum width for the centered area */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 20px; /* Add padding to create the white spaces */
+}
 
 h1 {
   font-size: 50px;
@@ -71,9 +77,102 @@ p {
   font-size: 28px;
 }
 
+ul li {
+  margin-bottom: 20px; /* Adjust the value as per your preference */
+}
+
+#projects img {
+  width: 70%; /* Adjust the width as per your preference */
+  height: auto; /* Let the height scale proportionally */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: rgb(113, 227, 255);
+}
+
+#blogs a {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #666;
+}
+
+#projects span {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #666;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: medium;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/* background */
+
+body {
+  background-color: #222;
+  color: #fff;
+}
 
 .container {
-  max-width: 70%; /* Set the maximum width for the centered area */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 0 20px; /* Add padding to create the white spaces */
+  background-color: #333;
+}
+
+header {
+  background-color: #111;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+section {
+  background-color: #444;
+}
+
+section h2 {
+  color: #fff;
+}
+
+section p {
+  color: #ddd;
+}
+
+footer p {
+  color: #ddd;
+}
+
+/* rounded corners */
+
+.container {
+  border-radius: 10px;
+}
+
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  border-radius: 10px;
 }
