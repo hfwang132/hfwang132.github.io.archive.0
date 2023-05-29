@@ -8,7 +8,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 28px;
+    font-size: 24px;
     margin: 0;
     padding: 0;
 }
@@ -32,11 +32,11 @@ header {
 /* font size and margin */
 
 h1 {
-    font-size: 50px;
+    font-size: 46px;
 }
 
 p {
-    font-size: 28px;
+    font-size: 22px;
 }
 
 ul li {
@@ -47,15 +47,15 @@ ul li {
 
 nav ul {
     list-style-type: none;
-    text-align: center;
+    /* text-align: center; */
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
     display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
     position: relative;
 }
 
@@ -77,8 +77,8 @@ nav ul li::before {
 nav ul li a {
     color: #333;
     padding: 10px;
-    font-size: 32px;
-    margin-right: 20px;
+    font-size: 24px;
+    /* margin-right: 20px; */
 }
 
 nav ul li a:hover {
