@@ -45,6 +45,18 @@
         <li>
           <a href="https://github.com/hfwang132/zedboard-adi-pynq">
             <span> PYNQ ubuntu OS with AD9361 kernel support </span>
+            <p>
+              AD9361 is an RF transceiver chip designed by ADI, and has found tremendous applications in
+              software-defined radios (SDR).
+            </p>
+            <p>
+              PYNQ is a framework that allows users to access the programmable logic from the application level,
+              boosting hardware verification and software development.
+            </p>
+            <p>
+              In this project, we build a custom Linux Kernel, supporting both PYNQ and AD9361, making it possible to
+              develop high-level applications while utilizing the power and flexibility of heterogeneous platforms.
+            </p>
             <p><img src="img/zedboard+ad9361.jpg" alt="project 1"></p>
             <p><img src="img/fm-ad9361-system-bd.png" alt="project 1"></p>
           </a>
@@ -53,6 +65,10 @@
         <li>
           <a href="https://github.com/hfwang132/lenet-hls-pynq">
             <span>HLS FPGA design for LeNet-5</span>
+            <p>
+              In this project, we demonstrate a simple implementation of LeNet-5, one of the earliest CNNs. Various
+              hardware acceleration techniques, such as pipelining, partitioning and buffering, are explored.
+            </p>
             <p><img src="img/lenet_arch.png" alt="project 2"></p>
             <p><img src="img/quant_rpt.png" alt="project 2"></p>
           </a>
@@ -62,6 +78,11 @@
           <a href="https://github.com/hfwang132/ssd1680-micropython-drivers">
             <span>Micropython driver for SSD1680 e-ink display</span>
           </a>
+          <p>
+            In this project, we developed a simple driver for the SSD1680 e-ink display.
+            Then, we integrate it with the Raspberry Pi microcontroller and IoT sensors to create a cute little wifi
+            clock.
+          </p>
           <a href="https://github.com/hfwang132/eink-wifi-weather-clock">
             <p><img src="img/pico.png" alt="project 3"></p>
           </a>
@@ -70,6 +91,16 @@
         <li>
           <a href="https://github.com/hfwang132/fm-demod-pynqz2-rtlsdr">
             <span> Hardware-accelerated FM demodulation </span>
+            <p>
+              In this project, we combine an RTL-SDR dongle with the PYNQ-Z2 board to deliver an FM radio receiver
+              application accessible through Jupyter Web Server.
+            </p>
+
+            <p>
+              The CPU-intensive parts of the demodulation algorithm, such as phase discrimination and anti-aliasing
+              decimation filtering, are off-loaded to FPGA.
+              As a result, the processors can focus on handling broader applications like web services.
+            </p>
             <p><img src="img/z2-rtlsdr.jpg" alt="project 4"></p>
           </a>
         </li>
@@ -85,15 +116,17 @@
 
     <footer>
       <p>
-        &copy; 
+        &copy;
         <a href="https://github.com/hfwang132/hfwang132.github.io"> 2023 Haifei's Home. </a>
         <!-- <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a> -->
-      <!-- </p>
+        <!-- </p>
       <p> -->&nbsp;
-        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License"
+            style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
       </p>
       <p>
-        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+          Commons Attribution-ShareAlike 4.0 International License</a>.
       </p>
     </footer>
   </div>

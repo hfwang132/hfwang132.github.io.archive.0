@@ -36,3 +36,7 @@ a:hover {
   background-color: #666;
   margin-bottom: 10px;
 }
+
+#projects a {
+  text-decoration: none;
+}
